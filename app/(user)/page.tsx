@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <main>
-      <h1>Welcome</h1>
+      <h1 className="text-red-500">Welcome</h1>
     </main>
   );
 }
