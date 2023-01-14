@@ -1,6 +1,7 @@
 import "../../styles/output.css";
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
+import Providers from "../Providers";
 
 export default function RootLayout({
   children,
@@ -10,9 +11,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-7xl mx-auto">
-        <Header />
-        <Banner></Banner>
-        {children}
+        <Providers>
+          <Header />
+          <Banner></Banner>
+          {children}
+        </Providers>
       </body>
     </html>
   );

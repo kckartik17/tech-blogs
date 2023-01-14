@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GitHub } from "react-feather";
 import logo from "../public/logo.svg";
+import DarkModeButton from "./DarkModeButton";
 function Header() {
   return (
     <header className="flex items-center justify-between space-x-2 font-bold px-10 py-5">
@@ -10,7 +11,8 @@ function Header() {
           <Image src={logo} alt="logo" width={120} height={120}></Image>
         </Link>
       </div>
-      <div>
+      <div className="flex items-center space-x-4">
+        <DarkModeButton></DarkModeButton>
         <Link
           href="https://github.com/kckartik17"
           target="_blank"
