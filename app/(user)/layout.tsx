@@ -1,4 +1,6 @@
 import "../../styles/output.css";
+import Header from "../../components/Header";
+import Banner from "../../components/Banner";
 
 export default function RootLayout({
   children,
@@ -7,7 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="max-w-7xl mx-auto">
+        <Header />
+        <Banner></Banner>
+        {children}
+      </body>
     </html>
   );
 }
